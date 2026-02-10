@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Greeting from './components/Greeting'
 import StatusBadge from './components/StatusBadge'
+import UserCard from './components/UserCard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,10 @@ function App() {
       <h1>Vite + React</h1>
       <Greeting />
       <StatusBadge/>
+      <UserCard name="Alice" email="alice@example.com" role="Developer" />
+      <UserCard name="Bob" email="bob@example.com" role="Designer" />
+      <UserCard name="Charlie" email="charlie@example.com" role="Manager" />
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

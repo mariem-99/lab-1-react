@@ -1,0 +1,26 @@
+.UserCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    border: 1px solid #e0e0e0; /* Softer border */
+    border-radius: 12px;
+    width: 220px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Smoother shadow */
+    margin: 15px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.user-name {
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.user-email, .user-role {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    color: #666;
+}

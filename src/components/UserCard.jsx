@@ -1,11 +1,13 @@
 import './UserCard.css'
-function UserCard({name,email,role}){
-    return(
-        <div classeName="UserCard">
-            <h1>{name}</h1>
-            <h1>Email: {email}</h1>
-            <h1>Role:{role}</h1>
+
+function UserCard({ name, email, role }) {
+    return (
+        <div className="UserCard">
+            <h2 className="user-name">{name}</h2>
+            <p className="user-email"><strong>Email:</strong> {email}</p>
+            <p className="user-role">Role: {role}</p>
         </div>
     )
 }
+
 export default UserCard;
