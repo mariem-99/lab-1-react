@@ -1,0 +1,35 @@
+/* Container for the whole list */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to jump to the next line if screen is small */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Movie Card */
+.movie {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.movie:hover {
+    transform: translateY(-5px); /* Nice lift effect when you hover */
+}
+
+.movie-title {
+    margin: 0 0 10px 0;
+    color: #222;
+    font-size: 1.2rem;
+}
+
+.movie-dir, .movie-year {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}

@@ -1,0 +1,45 @@
+.blogPost {
+    margin: 40px auto; /* Centering the post */
+    padding: 30px;
+    max-width: 650px; /* Modern blog width for better readability */
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; /* Smoother, more modern rounded corners */
+    background-color: #ffffff; /* Clean white background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.blogPost h1 {
+    color: #1a1a1a;
+    font-size: 32px; /* Slightly smaller for better balance */
+    margin-bottom: 16px;
+    font-weight: 800; /* Bold, punchy headline */
+    line-height: 1.2;
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0; /* Separates the meta info from the content */
+    color: #666; /* Grey for "less important" info like dates */
+    font-size: 14px;
+}
+
+.blog-content {
+    font-size: 18px; /* Standard blog reading size is usually 16-18px */
+    color: #333;
+    line-height: 1.6; /* Adds more space between lines of text */
+    display: flex;          /* 1. Enable Flexbox */
+    flex-direction: column; /* 2. Keep items stacked vertically */
+    align-items: center;    /* 3. This pulls everything to the horizontal center */
+    text-align: center;
+}
+
+/* Added a nice hover effect */
+.blogPost:hover {
+    border-color: #a83a3a; /* Subtle nod to your original red theme */
+    transition: border-color 0.3s ease;
+}

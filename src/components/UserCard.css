@@ -16,11 +16,14 @@
 .user-name {
     margin: 0 0 8px 0;
     font-size: 1.4rem;
-    color: #333;
+    color: #a04040;
 }
 
 .user-email, .user-role {
     margin: 4px 0;
     font-size: 0.9rem;
     color: #666;
+}
+.UserCard:hover {
+    transform: translateY(-5px); /* Nice lift effect when you hover */
 }

@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.main-container {
+    display: flex;             /* 1. Turns on Flexbox */
+    justify-content: center;    /* 2. Centers horizontally */
+    align-items: center;        /* 3. Centers vertically */
+    min-height: 100vh;          /* 4. Makes container full screen height */
+    background-color: #f0f2f5;  /* Optional: light background to see the card better */
+}
