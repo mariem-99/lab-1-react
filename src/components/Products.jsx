@@ -4,7 +4,7 @@ function Product({title,price,instock,rating}){
     return(
         <div className="product">
             <h2 className="product-title">{title}</h2>
-            <p className="product-price">Price: ${price}</p>
+            <p className="product-price">Price: ${price.toFixed(2)}</p>
             <p className={`stock-status ${instock ? 'in-stock' : "out-of-stock"}`}>
                 {instock ? "in stock" : "out of stock"}
             </p>

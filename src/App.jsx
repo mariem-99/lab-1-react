@@ -6,6 +6,7 @@ import Greeting from './components/Greeting'
 import StatusBadge from './components/StatusBadge'
 import UserCard from './components/UserCard'
 import Product from './components/Products'
+import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -48,6 +49,25 @@ function App() {
         inStock={true} 
         rating={5} 
       />
+    </div>
+    <div className="App">
+      <Card title="User Info">
+                <p>This is the content inside Card 1.</p>
+            </Card>
+
+            
+            <Card title="Settings">
+                <button onClick={() => alert('Saved!')}>Save Changes</button>
+            </Card>
+
+            
+            <Card title="Featured Product">
+                <ul>
+                    <li>High Quality</li>
+                    <li>Fast Shipping</li>
+                    <li>Best Price</li>
+                </ul>
+            </Card>
     </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
